@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block body %}
+<form method="post">
+    {% csrf_token %}
+    <div class="alert alert-warning">
+        <b>Are you want to <i>delete this movie permenently</i></b>
+    </div>
+    <input type="submit" value="Delete" class="btn btn-danger">
+</form>
+{% endblock %}
